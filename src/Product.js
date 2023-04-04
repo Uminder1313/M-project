@@ -29,7 +29,7 @@ const Product = ({ id, title, image, price, rating }) => {
 <div className="Product__info">
   <p>{title}</p>
   <p className="Product__price">
-    <small>₹ </small>
+    <small>$</small>
 <strong>{price}</strong>
     </p>  
     <div className="Product__rating">

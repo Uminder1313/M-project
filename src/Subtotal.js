@@ -7,7 +7,7 @@ import { getCartTotal } from './reducer'
 import { useNavigate } from 'react-router-dom'
 
 const Subtotal = () => {
-  const navigate = useNavigate ()
+  const navigate = useNavigate()
   const [{cart} , dispatch] = useStateValue();
   return (
     <div className="subtotal">
@@ -29,7 +29,7 @@ decimalScale = {2}
 value={getCartTotal(cart)}
 displayType={"text"}
 thousandSeparator={true}
-prefix={"₹ "}
+prefix={"$"}
 />
 <button  onClick={e => navigate('/payment')}>Proceed to Checkout</button>
     </div>
